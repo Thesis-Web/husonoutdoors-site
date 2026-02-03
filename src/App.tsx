@@ -84,33 +84,36 @@ export default function App() {
 
   return (
     <div className="page">
-      <header className="header">
-        <div className="header__inner">
-          <div className="brand">
-  <img className="brand__logo" src="/assets/brand/logo.png" alt="Huson Outdoors Guided Fishing" />
-  <div>
-    <div className="brand__name">Huson Outdoors</div>
-    <TypeSubtitle text="Guided Fishing • Since 2010" />
+<header className="header">
+  <div className="header__inner">
+    <div className="brand">
+      <div>
+        <div className="brand__name">Huson Outdoors</div>
+        <TypeSubtitle text="Guided Fishing • Since 2010" />
+      </div>
+    </div>
+
+    <img
+      className="header__logo"
+      src="/assets/brand/logo-header.svg"
+      alt="Huson Outdoors Guided Fishing"
+    />
+
+    <nav className="nav">
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#season">Season</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a className="call" href={tel}>Call {phone}</a>
   </div>
-</div>
-
-
-          <nav className="nav">
-            <a href="#services">Services</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#season">Season</a>
-            <a href="#contact">Contact</a>
-          </nav>
-
-          <a className="call" href={tel}>Call {phone}</a>
-        </div>
-      </header>
-
+</header>
       <main>
         <section className="hero" style={{ backgroundImage: `url("/assets/hero/hero.webp?v=2")` }}>
           <div className="hero__inner">
             <div className="hero__copy">
-              <h1>Huson Outdoors Guided Fishing</h1>
+              <h3>Lake Livingston Guided Trips</h3>
               <p className="hero__lead">
                  Lake Livingston guided trips — morning or afternoon. All tackle and bait supplied.
               </p>
@@ -132,6 +135,7 @@ export default function App() {
               <ul className="list">
                 <li>White Bass</li>
                 <li>Catfish</li>
+                <li>Striped Bass</li>
                 <li>Alligator Gar</li>
               </ul>
 
