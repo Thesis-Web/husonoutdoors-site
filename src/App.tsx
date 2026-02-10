@@ -83,7 +83,7 @@ export default function App() {
   const tel = useMemo(() => `tel:${phone.replace(/[^0-9+]/g, "")}`, [phone]);
 
   return (
-    <div className="page">
+    <>
 <header className="header">
   <div className="header__inner">
     <div className="brand">
@@ -239,6 +239,6 @@ export default function App() {
             </div>
           </footer>
         </main>
-      </div>
+      </>
     );
   }
